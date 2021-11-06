@@ -18,6 +18,5 @@ To show the drawing code `NSRepresentableView` is used.
 
 These two Stackoverflow articles helped me:
 
--[SwiftUI NSViewRepresentable can't read data from @Publisher](https://stackoverflow.com/questions/66982859/swiftui-nsviewrepresentable-cant-read-data-from-publisher)
-
--[How do I vertically center an NSTextView in a SwiftUI view with NSViewRepresentable?](https://stackoverflow.com/questions/61090854/how-do-i-vertically-center-an-nstextview-in-a-swiftui-view-with-nsviewrepresenta)
+- [SwiftUI NSViewRepresentable can't read data from @Publisher](https://stackoverflow.com/questions/66982859/swiftui-nsviewrepresentable-cant-read-data-from-publisher)
+- [How do I vertically center an NSTextView in a SwiftUI view with NSViewRepresentable?](https://stackoverflow.com/questions/61090854/how-do-i-vertically-center-an-nstextview-in-a-swiftui-view-with-nsviewrepresenta)
