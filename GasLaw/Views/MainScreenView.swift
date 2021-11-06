@@ -26,31 +26,33 @@ struct MainScreenView: View {
             HStack {
                 
                 // Pressure Gauge with slider
-                HStack {
-                    Slider(value: $pressureValue, in: 0...280)
-                        .rotationEffect(.degrees(-90))
-                        .frame(width: DrawingDimensions.drawHeight * 0.8, height: 5, alignment: .center)
+                VStack {
                     PressureDrawViewRepresentable(pressureValue: pressureValue)
                         .frame(width: DrawingDimensions.drawWidth, height: DrawingDimensions.drawHeight)
+                    
+                    Slider(value: $pressureValue, in: 0...280)
+                        .frame(width: DrawingDimensions.drawWidth * 0.7)
                 }
+                .padding()
                 
                 // Volume Gauge with slider
-                HStack {
-                    Slider(value: $volumeValue, in: 0...280)
-                        .rotationEffect(.degrees(-90))
-                        .frame(width: DrawingDimensions.drawHeight * 0.8, height: 5, alignment: .center)
+                VStack {
                     VolumeDrawViewRepresentable(volumeValue: volumeValue)
                         .frame(width: DrawingDimensions.drawWidth, height: DrawingDimensions.drawHeight)
+                    
+                    Slider(value: $volumeValue, in: 0...280)
+                        .frame(width: DrawingDimensions.drawWidth * 0.7)
                 }
+                .padding()
                 
                 
                 // Temperature Gauge with slider
-                HStack {
-                    Slider(value: $temperatureValue, in: 0...280)
-                        .rotationEffect(.degrees(-90))
-                        .frame(width: DrawingDimensions.drawHeight * 0.8, height: 5, alignment: .center)
+                VStack {
                     TemperatureDrawViewRepresentable(temperatureValue: temperatureValue)
                         .frame(width: DrawingDimensions.drawWidth, height: DrawingDimensions.drawHeight)
+                    
+                    Slider(value: $temperatureValue, in: 0...280)
+                        .frame(width: DrawingDimensions.drawWidth * 0.7)
                 }
                 
             }
