@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571A3A1427368FB100304D79 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A1327368FB100304D79 /* MainScreenView.swift */; };
+		571A3A172736941500304D79 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A162736941500304D79 /* Units.swift */; };
 		5770A6CE27358E2100F0401D /* GasLawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770A6CD27358E2100F0401D /* GasLawApp.swift */; };
 		5770A6D027358E2100F0401D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770A6CF27358E2100F0401D /* ContentView.swift */; };
 		5770A6D227358E2400F0401D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5770A6D127358E2400F0401D /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571A3A1327368FB100304D79 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		571A3A162736941500304D79 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		5770A6CA27358E2100F0401D /* GasLaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasLaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5770A6CD27358E2100F0401D /* GasLawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLawApp.swift; sourceTree = "<group>"; };
 		5770A6CF27358E2100F0401D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571A3A1227368F9200304D79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				571A3A1327368FB100304D79 /* MainScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		571A3A15273693F700304D79 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				571A3A162736941500304D79 /* Units.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		5770A6C127358E2100F0401D = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +72,8 @@
 		5770A6CC27358E2100F0401D /* GasLaw */ = {
 			isa = PBXGroup;
 			children = (
+				571A3A15273693F700304D79 /* Constants */,
+				571A3A1227368F9200304D79 /* Views */,
 				5770A6CD27358E2100F0401D /* GasLawApp.swift */,
 				5770A6CF27358E2100F0401D /* ContentView.swift */,
 				5770A6D127358E2400F0401D /* Assets.xcassets */,
@@ -140,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5770A6D027358E2100F0401D /* ContentView.swift in Sources */,
+				571A3A172736941500304D79 /* Units.swift in Sources */,
+				571A3A1427368FB100304D79 /* MainScreenView.swift in Sources */,
 				5770A6CE27358E2100F0401D /* GasLawApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

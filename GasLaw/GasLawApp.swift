@@ -11,7 +11,8 @@ import SwiftUI
 struct GasLawApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            MainScreenView()
+                .frame(width: 980, height: 400,alignment: .center)
+        }.windowStyle(.hiddenTitleBar)
     }
 }
