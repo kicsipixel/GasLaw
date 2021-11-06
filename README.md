@@ -4,6 +4,8 @@
 
 This SwiftUI macOS app models the [Ideal Gas Law](https://en.wikipedia.org/wiki/Ideal_gas_law) in a engine cylinder.
 
+![screenshot](README.png)
+
 Our starting point:
 
 - Atmospheric pressure, 101.325 kPa
