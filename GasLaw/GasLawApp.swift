@@ -12,7 +12,7 @@ struct GasLawApp: App {
     var body: some Scene {
         WindowGroup {
             MainScreenView()
-                .frame(width: 980, height: 400,alignment: .center)
+                .padding()
         }.windowStyle(.hiddenTitleBar)
     }
 }

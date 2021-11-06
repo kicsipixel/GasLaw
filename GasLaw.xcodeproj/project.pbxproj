@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		571A3A1427368FB100304D79 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A1327368FB100304D79 /* MainScreenView.swift */; };
 		571A3A172736941500304D79 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A162736941500304D79 /* Units.swift */; };
+		571A3A1C2736990900304D79 /* PressureDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A1B2736990900304D79 /* PressureDrawView.swift */; };
+		571A3A1E2736991A00304D79 /* PressureDrawViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A1D2736991A00304D79 /* PressureDrawViewRepresentable.swift */; };
+		571A3A202736995500304D79 /* Gauges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A1F2736995500304D79 /* Gauges.swift */; };
+		571A3A2227369B1E00304D79 /* VolumeDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A2127369B1E00304D79 /* VolumeDrawView.swift */; };
+		571A3A2427369B3800304D79 /* VolumeDrawViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A2327369B3800304D79 /* VolumeDrawViewRepresentable.swift */; };
+		571A3A2627369B5600304D79 /* TemperatureDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A2527369B5600304D79 /* TemperatureDrawView.swift */; };
+		571A3A2827369B6E00304D79 /* TemperatureDrawViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A3A2727369B6E00304D79 /* TemperatureDrawViewRepresentable.swift */; };
 		5770A6CE27358E2100F0401D /* GasLawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770A6CD27358E2100F0401D /* GasLawApp.swift */; };
 		5770A6D027358E2100F0401D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770A6CF27358E2100F0401D /* ContentView.swift */; };
 		5770A6D227358E2400F0401D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5770A6D127358E2400F0401D /* Assets.xcassets */; };
@@ -18,6 +25,13 @@
 /* Begin PBXFileReference section */
 		571A3A1327368FB100304D79 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		571A3A162736941500304D79 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		571A3A1B2736990900304D79 /* PressureDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureDrawView.swift; sourceTree = "<group>"; };
+		571A3A1D2736991A00304D79 /* PressureDrawViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureDrawViewRepresentable.swift; sourceTree = "<group>"; };
+		571A3A1F2736995500304D79 /* Gauges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gauges.swift; sourceTree = "<group>"; };
+		571A3A2127369B1E00304D79 /* VolumeDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDrawView.swift; sourceTree = "<group>"; };
+		571A3A2327369B3800304D79 /* VolumeDrawViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDrawViewRepresentable.swift; sourceTree = "<group>"; };
+		571A3A2527369B5600304D79 /* TemperatureDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDrawView.swift; sourceTree = "<group>"; };
+		571A3A2727369B6E00304D79 /* TemperatureDrawViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDrawViewRepresentable.swift; sourceTree = "<group>"; };
 		5770A6CA27358E2100F0401D /* GasLaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasLaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5770A6CD27358E2100F0401D /* GasLawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLawApp.swift; sourceTree = "<group>"; };
 		5770A6CF27358E2100F0401D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +54,10 @@
 		571A3A1227368F9200304D79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				571A3A1F2736995500304D79 /* Gauges.swift */,
+				571A3A1A273698B300304D79 /* TemperatureGaugeView */,
+				571A3A19273698A500304D79 /* VolumeGaugeView */,
+				571A3A182736989500304D79 /* PressureGaugeView */,
 				571A3A1327368FB100304D79 /* MainScreenView.swift */,
 			);
 			path = Views;
@@ -51,6 +69,33 @@
 				571A3A162736941500304D79 /* Units.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		571A3A182736989500304D79 /* PressureGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				571A3A1B2736990900304D79 /* PressureDrawView.swift */,
+				571A3A1D2736991A00304D79 /* PressureDrawViewRepresentable.swift */,
+			);
+			path = PressureGaugeView;
+			sourceTree = "<group>";
+		};
+		571A3A19273698A500304D79 /* VolumeGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				571A3A2127369B1E00304D79 /* VolumeDrawView.swift */,
+				571A3A2327369B3800304D79 /* VolumeDrawViewRepresentable.swift */,
+			);
+			path = VolumeGaugeView;
+			sourceTree = "<group>";
+		};
+		571A3A1A273698B300304D79 /* TemperatureGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				571A3A2527369B5600304D79 /* TemperatureDrawView.swift */,
+				571A3A2727369B6E00304D79 /* TemperatureDrawViewRepresentable.swift */,
+			);
+			path = TemperatureGaugeView;
 			sourceTree = "<group>";
 		};
 		5770A6C127358E2100F0401D = {
@@ -161,9 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571A3A2227369B1E00304D79 /* VolumeDrawView.swift in Sources */,
 				5770A6D027358E2100F0401D /* ContentView.swift in Sources */,
+				571A3A202736995500304D79 /* Gauges.swift in Sources */,
+				571A3A1C2736990900304D79 /* PressureDrawView.swift in Sources */,
+				571A3A1E2736991A00304D79 /* PressureDrawViewRepresentable.swift in Sources */,
+				571A3A2627369B5600304D79 /* TemperatureDrawView.swift in Sources */,
+				571A3A2827369B6E00304D79 /* TemperatureDrawViewRepresentable.swift in Sources */,
 				571A3A172736941500304D79 /* Units.swift in Sources */,
 				571A3A1427368FB100304D79 /* MainScreenView.swift in Sources */,
+				571A3A2427369B3800304D79 /* VolumeDrawViewRepresentable.swift in Sources */,
 				5770A6CE27358E2100F0401D /* GasLawApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
